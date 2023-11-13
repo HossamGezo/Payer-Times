@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+a, button {
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  animation: change-image 600s ease infinite alternate;
+  background: url("../images/mobile/mobMosq01.jpg") no-repeat fixed center bottom, url("../images/mobile/mobMosq02.jpg") no-repeat fixed center bottom, url("../images/mobile/mobMosq03.jpg") no-repeat fixed center bottom, url("../images/mobile/mobMosq04.jpg") no-repeat fixed center top, url("../images/mobile/mobMosq05.jpg") no-repeat fixed center center, url("../images/mobile/mobMosq06.jpg") no-repeat fixed center center, url("../images/mobile/mobMosq07.jpg") no-repeat fixed center bottom, url("../images/mobile/mobMosq08.jpg") no-repeat fixed center top, url("../images/mobile/mobMosq09.jpg") no-repeat fixed center center, url("../images/mobile/mobMosq01.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+}
+@keyframes change-image {
+  0% {
+    background: url("../images/mobile/mobMosq01.jpg") no-repeat fixed center bottom;
+    background-size: cover;
+  }
+  20% {
+    background: url("../images/mobile/mobMosq02.jpg") no-repeat fixed center bottom;
+    background-size: cover;
+  }
+  30% {
+    background: url("../images/mobile/mobMosq03.jpg") no-repeat fixed center bottom;
+    background-size: cover;
+  }
+  40% {
+    background: url("../images/mobile/mobMosq04.jpg") no-repeat fixed center top;
+    background-size: cover;
+  }
+  50% {
+    background: url("../images/mobile/mobMosq05.jpg") no-repeat fixed center center;
+    background-size: cover;
+  }
+  60% {
+    background: url("../images/mobile/mobMosq06.jpg") no-repeat fixed center center;
+    background-size: cover;
+  }
+  70% {
+    background: url("../images/mobile/mobMosq07.jpg") no-repeat fixed center bottom;
+    background-size: cover;
+  }
+  80% {
+    background: url("../images/mobile/mobMosq08.jpg") no-repeat fixed center top;
+    background-size: cover;
+  }
+  90% {
+    background: url("../images/mobile/mobMosq09.jpg") no-repeat fixed center center;
+    background-size: cover;
+  }
+  100% {
+    background: url("../images/mobile/mobMosq10.jpg") no-repeat fixed center center;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background: url("../images/desktop/deskMosq01.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq01.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq02.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq03.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq04.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq05.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq06.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq07.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq08.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq09.jpg") no-repeat fixed center center, url("../images/desktop/deskMosq10.jpg") no-repeat fixed center center;
+    background-size: cover;
+  }
+  @keyframes change-image {
+    0% {
+      background: url("../images/desktop/deskMosq01.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    20% {
+      background: url("../images/desktop/deskMosq02.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    30% {
+      background: url("../images/desktop/deskMosq03.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    40% {
+      background: url("../images/desktop/deskMosq04.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    50% {
+      background: url("../images/desktop/deskMosq05.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    60% {
+      background: url("../images/desktop/deskMosq06.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    70% {
+      background: url("../images/desktop/deskMosq07.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    80% {
+      background: url("../images/desktop/deskMosq08.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    90% {
+      background: url("../images/desktop/deskMosq09.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+    100% {
+      background: url("../images/desktop/deskMosq10.jpg") no-repeat fixed center center;
+      background-size: cover;
+    }
+  }
+}
+
+.country {
+  position: relative;
+}
+.country__information {
+  margin: 10px 0;
+  background: #253673 url("../images/home/Salah-Counter-BG.jpg");
+  opacity: 0.8;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .country__information {
+    margin: 30px 0;
+  }
+}
+@media (min-width: 992px) {
+  .country__information {
+    margin: 50px 0;
+  }
+}
+@media (min-width: 992px) {
+  .country__information {
+    padding: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .country__information {
+    padding: 40px;
+  }
+}
+.country__information--name {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .country__information--name {
+    font-size: 45px;
+    font-weight: bold;
+  }
+}
+.country__information--date {
+  font-size: 20px;
+}
+.country .choose-country {
+  margin: 30px 0;
+}
+@media (min-width: 768px) {
+  .country .choose-country {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .country .choose-country {
+    margin-bottom: 50px;
+  }
+}
+.country .choose-country label {
+  display: block;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.country .choose-country select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 10px;
+}
+.country__payer-times {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .country__payer-times {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .country__payer-times {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+  }
+}
+.country__payer-times .payer {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  color: #272727;
+  text-align: center;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .country__payer-times .payer {
+    height: 150px;
+  }
+}
+.country__payer-times .payer__name {
+  font-size: 25px;
+  font-weight: bold;
+}
+.country__payer-times .payer__time {
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prayer Timings</title>
+    <!-- Main Css Template File -->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!-- Axios Library -->
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <!-- Main JS Template File -->
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="country">
+        <div class="country__information">
+          <div class="country__information--name"></div>
+          <div class="country__information--date">
+            <div class="hijri" lang="ar" dir="rtl"></div>
+          </div>
+          <!-- // Country Information Date -->
+        </div>
+        <!-- // Country Information -->
+        <div class="choose-country">
+          <label for="country">Choose a country</label>
+          <select name="countries" id="country">
+            <option data-city="cairo" value="Egypt" selected>Egypt</option>
+            <option data-city="Riyadh" value="Saudi Arabia">Saudi Arabia</option>
+            <option data-city="Dubai" value="United Arab Emirates">United Arab Emirates</option>
+            <option data-city="Doha" value="Qatar">Qatar</option>
+            <option data-city="Kuwait" value="Kuwait">Kuwait</option>
+          </select>
+        </div>
+        <div class="country__payer-times">
+        </div>
+        <!-- // Country Payer Times -->
+      </div>
+      <!-- // Country -->
+    </div>
+    <!-- // Container -->
+  </body>
+</html>

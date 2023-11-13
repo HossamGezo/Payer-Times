@@ -1,0 +1,139 @@
+// Import Helpers Directory Contents
+@use "helpers/usinghelpers" as *;
+
+// Import Global File From Components Directory
+@use "components/global";
+
+// ----- Begining Of The Project -----
+
+body {
+  min-height: 100vh;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: color(overlay-color);
+  }
+  animation: change-image 600s ease infinite alternate;
+  background: 
+    url("../images/mobile/mobMosq01.jpg") no-repeat fixed center bottom,
+    url("../images/mobile/mobMosq02.jpg") no-repeat fixed center bottom,
+    url("../images/mobile/mobMosq03.jpg") no-repeat fixed center bottom,
+    url("../images/mobile/mobMosq04.jpg") no-repeat fixed center top,
+    url("../images/mobile/mobMosq05.jpg") no-repeat fixed center center,
+    url("../images/mobile/mobMosq06.jpg") no-repeat fixed center center,
+    url("../images/mobile/mobMosq07.jpg") no-repeat fixed center bottom,
+    url("../images/mobile/mobMosq08.jpg") no-repeat fixed center top,
+    url("../images/mobile/mobMosq09.jpg") no-repeat fixed center center,
+    url("../images/mobile/mobMosq01.jpg") no-repeat fixed center center;
+  background-size: cover;
+  @include background-animation(mobile);
+  @include media(md) {
+    background:   
+      url("../images/desktop/deskMosq01.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq01.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq02.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq03.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq04.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq05.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq06.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq07.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq08.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq09.jpg") no-repeat fixed center center,
+      url("../images/desktop/deskMosq10.jpg") no-repeat fixed center center;
+    background-size: cover;
+    @include background-animation(tablet);
+  }
+}
+.country {
+  position: relative;
+  &__information {
+  margin: 10px 0;
+  @include media(md) {
+    margin: 30px 0;
+  }
+  @include media(lg) {
+    margin: 50px 0;
+  }
+  background: color(main-color) url("../images/home/Salah-Counter-BG.jpg");
+  opacity: 0.8;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  @include media (lg) {
+    padding: 30px;
+  }
+  @include media (xl) {
+    padding: 40px;
+  }
+  text-align: center;
+    &--name {
+      font-size: 25px;
+      margin-bottom: 10px;
+      @include media(lg) {
+        font-size: 45px;
+        font-weight: bold;
+      }
+    }
+    &--date {
+      font-size: 20px;
+    }
+  }
+  .choose-country {
+    margin: 30px 0;
+    @include media(md) {
+      margin-bottom: 20px;
+    }
+    @include media(lg) {
+      margin-bottom: 50px;
+    }
+    label {
+      display: block;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    select {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      outline: none;
+      border-radius: 10px;
+    }
+  }
+  &__payer-times {
+    @include grid(250px, 20px);
+    @include media(md) {
+      @include grid(300px, 20px);
+    }
+    @include media(lg) {
+      @include grid(350px, 20px);
+    }
+    .payer {
+      background-color: color(payer-color);
+      color: #272727;
+      text-align: center;
+      height: 150px;
+      @include media(md) {
+        height: 150px;
+      }
+      border-radius: 10px;
+      @include flex(null, column, center, center, 10px);
+      &__name {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      &__time {
+        font-size: 20px;
+      }
+    }
+  }
+}

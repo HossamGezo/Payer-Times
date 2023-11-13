@@ -1,0 +1,9 @@
+// Import Variables
+@use "variables" as *;
+
+// ----- Begining Of The Functions -----
+
+// 1 --- Color Function
+@function color($color) {
+  @return map-get($color-breakpoints, $color);
+}

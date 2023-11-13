@@ -1,0 +1,40 @@
+// Color BreakPoints Map
+$color-breakpoints: (
+  main-color: #253673,
+  overlay-color: #000000b3,
+  payer-color: #ffffff80,
+);
+
+// Media BreakPoints Map
+$media-breakpoints: (
+  sm: "(max-width: 767px)",
+  md: "(min-width: 768px)",
+  lg: "(min-width: 992px)",
+  xl: "(min-width: 1200px)"
+);
+
+// Mobile Fotos Array
+$mob-photos:
+  (00 "../images/mobile/mobMosq01.jpg" center bottom),
+  (02 "../images/mobile/mobMosq02.jpg" center bottom),
+  (03 "../images/mobile/mobMosq03.jpg" center bottom),
+  (04 "../images/mobile/mobMosq04.jpg" center top),
+  (05 "../images/mobile/mobMosq05.jpg" center center),
+  (06 "../images/mobile/mobMosq06.jpg" center center),
+  (07 "../images/mobile/mobMosq07.jpg" center bottom),
+  (08 "../images/mobile/mobMosq08.jpg" center top),
+  (09 "../images/mobile/mobMosq09.jpg" center center),
+  (10 "../images/mobile/mobMosq10.jpg" center center);
+
+// Mobile Fotos Array
+$tablet-photos: 
+  (00 "../images/desktop/deskMosq01.jpg" center center),
+  (02 "../images/desktop/deskMosq02.jpg" center center),
+  (03 "../images/desktop/deskMosq03.jpg" center center),
+  (04 "../images/desktop/deskMosq04.jpg" center center),
+  (05 "../images/desktop/deskMosq05.jpg" center center),
+  (06 "../images/desktop/deskMosq06.jpg" center center),
+  (07 "../images/desktop/deskMosq07.jpg" center center),
+  (08 "../images/desktop/deskMosq08.jpg" center center),
+  (09 "../images/desktop/deskMosq09.jpg" center center),
+  (10 "../images/desktop/deskMosq10.jpg" center center);

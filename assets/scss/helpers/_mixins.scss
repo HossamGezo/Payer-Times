@@ -1,0 +1,64 @@
+// Import Variables And Functions
+@use "variables" as *;
+@use "functions" as *;
+
+// ----- Begining Of The Mixins
+
+// 1 --- Flex Mixin
+@mixin flex($wrap, $direction, $justify, $align, $gap) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+// 2 --- Grid Mixin
+@mixin grid($width, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($width, 1fr));
+  gap: $gap;
+}
+// 3 --- Media Mixin
+@mixin media($screen-measure) {
+  @media #{map-get($media-breakpoints, $screen-measure)} {
+    @content;
+  }
+}
+// 4 --- ScrollBar Mixin
+@mixin scrollBar($width, $color-tarck, $color-thumb) {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: map-get($color-breakpoints, $color-tarck);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: map-get($color-breakpoints, $color-thumb);
+  }
+}
+// 5 --- Transition Mixin
+@mixin transition {
+  transition: 0.3s ease;
+}
+// 6 --- backGround Mixin
+@mixin background-animation($device){
+  @keyframes change-image {
+    @if $device == "mobile" {
+      @each $key, $photo, $direction-1, $direction-2 in $mob-photos {
+        #{$key * 10%} {
+          background: url($photo) no-repeat fixed $direction-1 $direction-2;
+          background-size: cover;
+        }
+      }
+    } @else if $device == "tablet" {
+      @each $key, $photo, $direction-1, $direction-2 in $tablet-photos {
+        #{$key * 10%} {
+          background: url($photo) no-repeat fixed $direction-1 $direction-2;
+          background-size: cover;
+        }
+      }
+    } 
+  } 
+}
